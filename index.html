@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="icon" type="image/svg+xml" href="/vite.svg" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Shorts Script AUTO-Generator</title>
+    
+    <script src="https://cdn.tailwindcss.com"></script>
+    
+    <script>
+      tailwind.config = {
+        theme: {
+          extend: {
+            colors: {
+              'brand-purple': '#8A2BE2',
+              'brand-pink': '#FF69B4',
+              'dark-bg': '#1a1a2e',
+              'dark-card': '#16213e',
+              'dark-accent': '#0f3460',
+            },
+            animation: {
+              'fade-in': 'fadeIn 0.5s ease-out forwards',
+            },
+            keyframes: {
+              fadeIn: {
+                '0%': { opacity: '0', transform: 'translateY(20px)' },
+                '100%': { opacity: '1', transform: 'translateY(0)' },
+              }
+            }
+          }
+        }
+      }
+    </script>
+  </head>
+  
+  <body class="bg-brand-bg text-text-main font-sans antialiased">
+      <div id="root"></div>
+      <script type="module" src="/src/main.jsx"></script>
+  </body>
+ </html>
