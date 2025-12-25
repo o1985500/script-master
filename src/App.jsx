@@ -12,7 +12,10 @@ import {
 } from "lucide-react";
 import { useState, useEffect, useRef } from 'react';
 
-const SERVER_URL = "http://119.59.103.159:5000";   // <— เปลี่ยนเป็น url ของคุณ
+// const SERVER_URL = "http://119.59.103.159:5000";   // <— เปลี่ยนเป็น url ของคุณ
+// ✅ แก้ไข URL เป็นของ Render เรียบร้อยแล้ว
+const SERVER_URL = "https://script-master.onrender.com";
+
 
 const STYLE_OPTIONS = [
   { id: 'funny', label: '😂 ตลก / แกงตัวเอง', desc: 'เน้นฮา พากย์เสียงหลง', color: 'from-yellow-400 to-orange-500' },
