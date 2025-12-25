@@ -7,8 +7,9 @@ from dotenv import load_dotenv
 
 load_dotenv()
 MISTRAL_API_KEY = os.getenv("MISTRAL_API_KEY")
+
 app = Flask(__name__)
-CORS(app)
+CORS(app, resources={r"/*": {"origins": "*"}})  # <--- เพิ่มบรรทัดนี้ครับ!
 
 # ---------- ตัวช่วย: สร้าง JSON ครบถ้วน 3 Concept / 4 Scenes ----------
 def build_perfect_output(user_topic, style):
