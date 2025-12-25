@@ -17,6 +17,7 @@ import { useState, useEffect, useRef } from 'react';
 const SERVER_URL = "https://script-master.onrender.com";
 
 
+
 const STYLE_OPTIONS = [
   { id: 'funny', label: '😂 ตลก / แกงตัวเอง', desc: 'เน้นฮา พากย์เสียงหลง', color: 'from-yellow-400 to-orange-500' },
   { id: 'lifestyle', label: '✨ ชีวิตดี๊ดี / Vlog', desc: 'อวดไลฟ์สไตล์ คุมโทน', color: 'from-sky-400 to-blue-500' },
